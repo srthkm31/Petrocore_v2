@@ -203,7 +203,7 @@ router.post("/resume", upload.single("resume"), async (req, res) => {
     try {
       await transporter.sendMail({
         from: `"Petrocore Workforce Solutions" <${process.env.SMTP_USER}>`,
-        to: "itssrthk2312@gmail.com",
+        to: "hr@petrocore.in",
         subject: `New Resume Submission - ${email}`,
         html: `
         <div style="background-color: #f9f9f9; padding: 40px 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">

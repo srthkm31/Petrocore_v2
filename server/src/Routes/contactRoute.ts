@@ -37,7 +37,12 @@ router.post("/contact", async (req, res) => {
     try {
       await transporter.sendMail({
         from: `"Petrocore Workforce Solutions" <${process.env.SMTP_USER}>`,
-        to: ["itssrthk2312@gmail.com"],
+        to: [
+          "tarun@petrocore.in",
+          "akumar@petrocore.in",
+          "info@petrocore.in",
+          "admin@petrocore.in",
+        ],
         subject: `New contact form submission - ${fullName}`,
         html: `
         <!DOCTYPE html>
